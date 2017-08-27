@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: PDQSmbOoeKT7q8oIQcbVADtIwPGOXyUX25UwUPeNHtUc1R72gwQgEafC/QApCVBTY2JaTwINtfe5pbFovIVXek6uFk/+PxCM4jJS1ypunJ6vJ2Gw3UGh9wb0fQJzq/djMBJBHirxfMioRUfN82j6uCFSfVNS4M7GI/D0IzkzMvea0yvtykmWCf7KK3k/S92JeUBnyIWmQhvReWcIql5fB6x7MmTinwsoRDKLg0iUYhzV/c0BMDpjYuCdPnH9n0l29eHtm0031IYw9YUBgg4sqnxRdw0L2aFQqNMijJBXcwzEFgdErSqt1s7iEsCsIBPKTkVoUJc9bvBkKgyLI1k/NPWH70isEMZ6kstT4yq7ayjmbpR+287l83UVwNHKSbhvzNjCcNB3lFjErQVRjtT8POjDx5qIZlZNdS5zZb2WkGHKYdlQU0v3HoZDG0N0yCn7J44wVEJ0T4+TfceiVGgkbiOyvfaLu3AyAeR+GZ5PHcQcIrgnmpua9HrNF5tN9jS4W0cpZ3vS+yLQagiUNd+rLDqQw+PQRuVW5O5snCeChsDY65l09JJPpnvdtFlyYWEcmlwrI7T5GD4AbJ3Q7nJkIsH7zS0b0nK7isRvGS0Mw3kjMYAvI+JjKjsJvQzRnilCuwe/nZK5GVWWkgQmIfmiHQbI4i/syXksW3kI7J+SrP8=
+  app: glacial-mesa-28828
+  on:
+    repo: brootroot/node-restaurants-app-mongoose
+    branch: feature/with-tests
