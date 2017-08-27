@@ -14,7 +14,7 @@ const { Restaurant } = require('./models');
 const app = express();
 app.use(bodyParser.json());
 
-app.use('/', function() {
+app.use('/', (req, res) => {
   res.send('nice!');
 });
 
