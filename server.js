@@ -15,7 +15,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use('/', (req, res) => {
-  res.send('nice!');
+  console.log(nice!);
 });
 
 // GET requests to /restaurants => return 10 restaurants
