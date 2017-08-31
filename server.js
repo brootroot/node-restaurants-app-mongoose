@@ -14,10 +14,6 @@ const { Restaurant } = require('./models');
 const app = express();
 app.use(bodyParser.json());
 
-app.use('/', (req, res) => {
-  console.log(nice!);
-});
-
 // GET requests to /restaurants => return 10 restaurants
 app.get('/restaurants', (req, res) => {
   Restaurant.find()
